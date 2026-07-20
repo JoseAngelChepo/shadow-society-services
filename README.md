@@ -6,10 +6,19 @@ Exposes **`/api/v1`** with debate simulation, Judge (Mirror / Shadow), and optio
 
 Pairs with [`shadow-society-platform`](https://github.com/JoseAngelChepo/shadow-society-platform) (Next.js on `:3010`).
 
+License: [MIT](./LICENSE)
+
+## Prerequisites
+
+- Node.js 20+
+- MongoDB Atlas connection string (`MONGODB_URI`) for persistence
+- Optional: `DASHSCOPE_API_KEY` for real Qwen scoring (without it, Judge runs in demo/heuristic mode)
+
 ## Quick start
 
 ```bash
 cp .env.example .env   # or: npm run setup-env
+# Edit .env — set at least MONGODB_URI
 npm ci
 npm run dev            # http://localhost:3011
 ```

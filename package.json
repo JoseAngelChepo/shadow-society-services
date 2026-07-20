@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Shadow Society API — multi-agent debate Judge (Qwen)",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "build": "nest build",
     "setup-env": "node scripts/setup-env.mjs",

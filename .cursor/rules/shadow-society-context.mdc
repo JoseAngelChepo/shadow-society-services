@@ -1,0 +1,26 @@
+---
+description: Shadow Society services context
+alwaysApply: true
+---
+
+# shadow-society-services — project context
+
+NestJS API for **Shadow Society** (Qwen Cloud Global AI Hackathon 2026 · Agent Society). Sibling of **shadow-society-platform**.
+
+## Stack
+
+- NestJS, Mongoose, Passport JWT (+ optional Google OAuth), class-validator
+- Global prefix: `/api/v1`
+- MongoDB via `MONGODB_URI`
+- Default port: `3011`
+
+## Product focus
+
+- **`debate`**: simulations, Judge (Mirror / Shadow), agent prompts, optional Qwen/DashScope LLM
+- Health: `GET /api/v1/health`
+
+Auth / users / emails / PAT modules may remain from the starter stack; hackathon product surface is the debate API. Prefer extending `src/debate/` for product work.
+
+## Platform client
+
+The web app calls this API at `NEXT_PUBLIC_API_URL` (typically `http://localhost:3011/api/v1`). See **shadow-society-platform**.

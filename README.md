@@ -8,6 +8,12 @@ Pairs with [`shadow-society-platform`](https://github.com/JoseAngelChepo/shadow-
 
 License: [MIT](./LICENSE)
 
+## Architecture
+
+![Shadow Society architecture — Frontend, NestJS API, MongoDB Atlas, and Qwen Cloud](./docs/architecture.png)
+
+How the pieces connect: Next.js UI → NestJS `/api/v1` → MongoDB Atlas (simulations) and Qwen Cloud / DashScope (Judge LLM scoring).
+
 ## Prerequisites
 
 - Node.js 20+
